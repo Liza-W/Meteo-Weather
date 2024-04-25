@@ -15,28 +15,40 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" value="Enter city.." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            value="Enter city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
+    
       <main>
-        <h1>Miami</h1>
+         <div class="weather-app-data">
         <div>
-          <p>
+          <h1 class="weather-app-city">Miami</h1>
+          <p class="weather-app-details">
             Tuesday 14:49, scattered clouds
             <br />
-            Humidity: 66%, wind: 3.13km/h
+            Humidity:<strong>66%</strong> , wind: <strong>3.13km/h</strong> 
           </p>
         </div>
-        <div>⛅ 12 °C</div>
+        <div class="weather-app-container">
+          <div class="weather-app-icon">⛅</div> 
+          <div class="weather-app-temperature">12</div>
+          <div class="weather-app-icon">°C</div>
+         </div>
+        </div>
       </main>
-
+      
       <footer>
         Coded by
         <a href="https://github.com/Liza-W/" target="_blank">Liza Kamau,</a>
-        is<a href="https://github.com/Liza-W/Meteo-Weather/" target="_blank"
-          >open-sourced on GitHub</a
+        is<a href="https://github.com/Liza-W/Meteo-Weather/" target="_blank"></a>
+          open-sourced on GitHub</a
         >and<a
           href="https://steady-meerkat-b407df.netlify.app/"
           target="_blank"
